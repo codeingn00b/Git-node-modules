@@ -1,3 +1,4 @@
+```bash
 mkdir express-sqlite-lab && cd express-sqlite-lab
 npm init -y
 git init
@@ -9,15 +10,18 @@ npm i -D nodemon
 git branch -M main
 git remote add origin https://github.com/codeingn00b/Git-node-modules.git
 git push -u origin main
-# Create .gitignore manually 
-# write in
-node_modules/
-.env
-dist/
-coverage/
-.DS_Store
+```
+## Create .gitignore manually 
+**write in:**
+`node_modules/`
+,`.env`
+,`dist/`
+,`coverage/`
+,`.DS_Store`
+```bash
 git rm -r --cached node_modules
 git add .gitignore
 git commit -m "fix: remove node_modules from tracking and add .gitignore"
 git push
 git check-ignore -v node_modules
+```bash
